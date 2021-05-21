@@ -4,7 +4,6 @@
 
 - [curl](https://curl.haxx.se)
 - [jq](https://stedolan.github.io/jqt) (optional)
-- [sh](http://man7.org/linux/man-pages/man1/sh.1p.html)
 
 ## Acknowledgement
 
