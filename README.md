@@ -19,4 +19,5 @@ SPDX-License-Identifier: [Apache-2.0](LICENSE)
 ## Reference
 
 - [OpenWrt LuCI API Reference](https://openwrt.github.io/luci/api/index.html)
+- [LuCI Wiki - HowTo: Using the JSON-RPC API](https://github.com/openwrt/luci/wiki/JsonRpcHowTo)
  
