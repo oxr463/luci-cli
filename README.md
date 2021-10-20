@@ -1,5 +1,7 @@
 # OpenWrt luci command-line tool
 
+[![Development Status](https://img.shields.io/badge/development--status-planning-lightgrey?style=flat-square)](https://pypi.org/classifiers)
+
 ## Dependencies
 
 - [curl](https://curl.haxx.se)
