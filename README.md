@@ -5,7 +5,6 @@
 ## Dependencies
 
 - [curl](https://curl.haxx.se)
-- [jq](https://stedolan.github.io/jqt) (optional)
 
 ## Acknowledgement
 
