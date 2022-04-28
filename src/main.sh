@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+set -eu
 
 LUCI_RPC_URL="https://${OPENWRT_HOSTNAME}/cgi-bin/luci/rpc"
 
