@@ -1,0 +1,5 @@
+luci get uci network -A # --all
+
+luci get sys netconntrack
+
+luci get sys netdevices

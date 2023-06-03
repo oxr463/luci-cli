@@ -2,10 +2,6 @@
 
 [![Development Status](https://img.shields.io/badge/development--status-pre--alpha-yellow?style=flat-square)](https://pypi.org/classifiers)
 
-## Dependencies
-
-- [curl](https://curl.haxx.se)
-
 ## Acknowledgement
 
 Inspired by [`kubectl`](https://kubernetes.io/docs/reference/kubectl).
