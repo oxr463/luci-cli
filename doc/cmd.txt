@@ -1,5 +1,7 @@
 luci get uci network -A # --all
 
-luci get sys netconntrack
+luci get sys net conntrack
 
-luci get sys netdevices
+luci get sys net devices
+
+luci get sys uptime

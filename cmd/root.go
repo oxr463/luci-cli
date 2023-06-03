@@ -12,8 +12,6 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "luci",
-	Short: "fixme",
-	Long: `fixme`,
 }
 
 func Execute() {
@@ -21,8 +19,4 @@ func Execute() {
 	if err != nil {
 		os.Exit(1)
 	}
-}
-
-func init() {
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
