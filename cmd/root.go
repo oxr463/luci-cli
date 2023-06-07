@@ -11,6 +11,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use: "luci",
+        Short: "LuCI-CLI",
 }
 
 func Execute() {

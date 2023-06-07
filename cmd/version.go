@@ -12,9 +12,8 @@ func init() {
 
 var versionCmd = &cobra.Command{
 	Use:   "version",
-	Short: "Print the version number of luci",
-	Long:  `All software has versions. This is luci's`,
+	Short: "Print the version number of luci-cli",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("luci v0.0.1")
+		fmt.Println("luci-cli v0.0.1")
 	},
 }

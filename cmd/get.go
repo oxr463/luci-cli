@@ -1,8 +1,6 @@
 package cmd
 
 import (
-	"fmt"
-
 	"github.com/spf13/cobra"
 )
 
@@ -12,7 +10,5 @@ func init() {
 
 var getCmd = &cobra.Command{
 	Use: "get",
-	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("get")
-	},
+        Short: "Retrieve specific resources",
 }
