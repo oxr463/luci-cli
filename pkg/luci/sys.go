@@ -1,11 +1,13 @@
 package luci
 
 import (
-	"luci/request"
+	"fmt"
 )
 
 func GetSysNetConntrack() {
+	fmt.Println("conntrack")
 }
 
 func GetSysNetDevices() {
+	fmt.Println("devices")
 }

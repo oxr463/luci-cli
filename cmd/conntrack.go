@@ -1,18 +1,18 @@
 package cmd
 
 import (
-  "fmt"
+	"github.com/spf13/cobra"
 
-  "github.com/spf13/cobra"
+        luci "github.com/oxr463/luci-cli/pkg/luci"
 )
 
 func init() {
-  netCmd.AddCommand(conntrackCmd)
+	netCmd.AddCommand(conntrackCmd)
 }
 
 var conntrackCmd = &cobra.Command{
-  Use:   "conntrack",
-  Run: func(cmd *cobra.Command, args []string) {
-    fmt.Println("conntrack")
-  },
+	Use: "conntrack",
+	Run: func(cmd *cobra.Command, args []string) {
+		luci.GetSysNetConntrack()
+	},
 }

@@ -1,10 +1,13 @@
 package luci
 
-func GetHostname() {
+func GetHostname() string {
+  return "fixme"
 }
 
-func GetUsername() {
+func GetUsername() string {
+  return "fixme"
 }
 
-func GetPassword() {
+func GetPassword() string {
+  return "fixme"
 }

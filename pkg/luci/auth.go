@@ -1,18 +1,27 @@
 package luci
 
-import (
-	"luci/environment"
-	"luci/request"
-)
+func GetToken() string {
+	username := GetUsername()
+	password := GetPassword()
 
-func GetToken() {
-	username := GetUsername
-	password := GetPassword
-	
-  url := "https://${OPENWRT_HOSTNAME}/cgi-bin/luci/rpc/auth"
-  data := RequestData
-  "{ \"id\": 1, \"method\": \"login\", \"params\": [ \"${OPENWRT_USERNAME}\", \"${OPENWRT_PASSWORD}\" ] }"
+        _ = username
+        _ = password
 
-  // TODO: parse JSON result for token
-  return token
+	url := "https://${OPENWRT_HOSTNAME}/cgi-bin/luci/rpc/auth"
+
+        _ = url
+
+	data := RequestData{
+          Id: 1,
+          Method: "login",
+          Params: []string{"fixme"},
+        }
+
+        _ = data
+
+	// "{ \"id\": 1, \"method\": \"login\", \"params\": [ \"${OPENWRT_USERNAME}\", \"${OPENWRT_PASSWORD}\" ] }"
+        token := "fixme"
+
+	// TODO: parse JSON result for token
+	return token
 }

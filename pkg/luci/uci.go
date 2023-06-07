@@ -1,11 +1,7 @@
 package luci
 
-import (
-	"luci/request"
-)
-
 func GetUciAllNetwork() {
-	URL="https://${OPENWRT_HOSTNAME}/cgi-bin/luci/rpc/uci?auth=${OPENWRT_TOKEN}"
+	// URL="https://${OPENWRT_HOSTNAME}/cgi-bin/luci/rpc/uci?auth=${OPENWRT_TOKEN}"
 
-request "{ \"method\": \"get_all\", \"params\": [ \"network\" ] }"
+	// request "{ \"method\": \"get_all\", \"params\": [ \"network\" ] }"
 }

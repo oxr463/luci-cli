@@ -1,18 +1,18 @@
 package cmd
 
 import (
-  "fmt"
+	"fmt"
 
-  "github.com/spf13/cobra"
+	"github.com/spf13/cobra"
 )
 
 func init() {
-  rootCmd.AddCommand(getCmd)
+	rootCmd.AddCommand(getCmd)
 }
 
 var getCmd = &cobra.Command{
-  Use:   "get",
-  Run: func(cmd *cobra.Command, args []string) {
-    fmt.Println("get")
-  },
+	Use: "get",
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("get")
+	},
 }

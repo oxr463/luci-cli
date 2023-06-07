@@ -1,18 +1,18 @@
 package cmd
 
 import (
-  "fmt"
+	"fmt"
 
-  "github.com/spf13/cobra"
+	"github.com/spf13/cobra"
 )
 
 func init() {
-  netCmd.AddCommand(devicesCmd)
+	netCmd.AddCommand(devicesCmd)
 }
 
 var devicesCmd = &cobra.Command{
-  Use:   "devices",
-  Run: func(cmd *cobra.Command, args []string) {
-    fmt.Println("devices")
-  },
+	Use: "devices",
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("devices")
+	},
 }

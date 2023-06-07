@@ -1,6 +1,5 @@
 /*
 Copyright © 2023 Lucas Ramage <lucas.ramage@infinite-omicron.com>
-
 */
 package cmd
 
@@ -11,7 +10,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "luci",
+	Use: "luci",
 }
 
 func Execute() {

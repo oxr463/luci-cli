@@ -1,6 +1,7 @@
 package luci
 
 import (
+        "bytes"
 	"fmt"
 	"io/ioutil"
 	"net/http"
@@ -13,11 +14,11 @@ type RequestData struct {
 	Params []string
 }
 
-func Request(string url, RequestData data) {
+func Request(url string, data RequestData) {
 	c := http.Client{Timeout: time.Duration(1) * time.Second}
 	// TODO: replace hostname and token in url string
 	// TODO: append RequestData to POST request
-	resp, err := c.Post(url)
+	resp, err := c.Post(url, "application/json", bytes.NewBuffer(nil))
 	if err != nil {
 		fmt.Printf("Error %s", err)
 		return
@@ -31,5 +32,5 @@ func Request(string url, RequestData data) {
 	}
 
 	fmt.Printf("Body : %s", body)
-	return body
+	//return body
 }
