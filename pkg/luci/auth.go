@@ -1,27 +1,32 @@
 package luci
 
-func GetToken() string {
-	username := GetUsername()
-	password := GetPassword()
+import (
+        _ "encoding/json"
+	"fmt"
+        "os"
+)
 
-        _ = username
-        _ = password
+func GetToken() ([]byte, error) {
+	hostname, err := GetHostname()
+	username, err := GetUsername()
+	password, err := GetPassword()
 
-	url := "https://${OPENWRT_HOSTNAME}/cgi-bin/luci/rpc/auth"
-
-        _ = url
-
-	data := RequestData{
-          Id: 1,
-          Method: "login",
-          Params: []string{"fixme"},
+	if err != nil {
+          fmt.Println(err)
         }
 
-        _ = data
+	url := fmt.Sprintf("https://%s/cgi-bin/luci/rpc/auth", hostname)
 
-	// "{ \"id\": 1, \"method\": \"login\", \"params\": [ \"${OPENWRT_USERNAME}\", \"${OPENWRT_PASSWORD}\" ] }"
-        token := "fixme"
+	data := RequestData{
+		Id:     1,
+		Method: "login",
+		Params: []string{username, password},
+	}
+
+	token, err := Request(url, data)
 
 	// TODO: parse JSON result for token
-	return token
+
+        os.Setenv("OPENWRT_TOKEN", "fixme")
+	return token, err
 }
